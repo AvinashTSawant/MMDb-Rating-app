@@ -1,0 +1,19 @@
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .movie-item {
+    width: 23%; /* Set the width as desired, adjusting to leave some space between images */
+   
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px; /* Set a maximum height if needed to maintain a consistent size */
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }

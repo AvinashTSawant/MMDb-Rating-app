@@ -1,0 +1,41 @@
+
+/* nav{ 
+  margin-top: 0px;
+  z-index: 1;
+ position: fixed;
+ width: 100%;
+} */
+#mmdb{
+  margin-left: 20px;
+  font-size: medium;
+  color: white;
+  font-weight: bolder;
+}
+  input{
+    margin-left: 250px;
+    width: 50%;
+    
+  }
+
+
+  
+.movie-container {
+  margin: 20px;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-item {
+  width: 23%; 
+ 
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: 80%;
+ 
+}

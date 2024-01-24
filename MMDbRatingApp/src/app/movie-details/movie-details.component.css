@@ -1,0 +1,32 @@
+
+
+#mmdb{
+  margin-left: 20px;
+  font-size: medium;
+  color: white;
+  font-weight: bolder;
+}
+
+.movie-details-container {
+    display: flex;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .details-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  img {
+    width: 100%;
+    height: 60%;
+   
+  }
+
+  #overview{
+    font-size: small;
+  }
+  

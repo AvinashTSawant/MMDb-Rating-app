@@ -1,0 +1,53 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand  " id="mmdb" href="/">MMDb</a>
+  <!-- <input class="form-control mr-sm-2"  type="search" [(ngModel)]="searchQuery" placeholder="Search">
+  <button class="btn btn-success mx-2 my-sm-0"  (click)="search()">Search</button> -->
+
+</nav>
+
+  <!-- <div *ngIf="movieDetails" class="movie-details-container">
+    <div class="image-container">
+      <img [src]=" 'https://image.tmdb.org/t/p/w500/' + movieDetails.poster_path" height="500px" width="500px">
+    </div>
+    <div class="details-container">
+      <h2>{{ movieDetails.title }} </h2>
+      <p id="overview">{{ movieDetails.overview }}</p>
+    </div>
+  </div> -->
+
+  
+
+
+  <div *ngIf="movieDetails" class="movie-details-container">
+    <div class="image-container">
+      <img [src]=" 'https://image.tmdb.org/t/p/w500/' + movieDetails.poster_path" height="500px" width="500px">
+    </div>
+    <div class="details-container">
+      <h2>{{ movieDetails.title }} </h2>
+      <span>
+        <h6  class=" det">{{ movieDetails. status }} &nbsp; &nbsp; &nbsp;   | &nbsp; &nbsp; &nbsp;   {{ movieDetails. runtime }}m   </h6>
+        <!-- {{  movieDetails.vote_average}} -->
+      </span>
+
+      
+
+      <p id="overview">{{ movieDetails.overview }}</p>
+
+      <h5>Other Details :-</h5>
+
+      <h6>Language</h6>
+      <p>{{ movieDetails.original_language }}</p>
+
+      <h6>budget :</h6>
+      <p>${{ movieDetails.budget }}</p>
+     
+
+      <h6>revenue :</h6>
+      <p>${{ movieDetails.revenue }}</p>
+
+
+     
+    </div>
+  </div>
+

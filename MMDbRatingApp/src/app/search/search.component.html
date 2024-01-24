@@ -1,0 +1,12 @@
+<!-- <h2>Search Movies</h2> -->
+
+<input [(ngModel)]="searchQuery" placeholder="Search">
+<button (click)="search()">Search</button>
+<div class="movie-container">
+  <div *ngFor="let movie of searchResults" class="movie-item">
+    <img [src]=" 'https://image.tmdb.org/t/p/w500/' + movie.poster_path"  alt="{{ movie.title }}" height="20px" width="20px">
+    <p>
+      {{ movie.title }}  {{ movie.vote_average }} 
+    </p>
+  </div>
+</div>
